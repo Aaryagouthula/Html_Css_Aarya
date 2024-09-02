@@ -3,85 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Basketball Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
         }
 
-        .login-container {
+        .header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .header img {
+            width: 50px;
+            vertical-align: middle;
+        }
+
+        .header h1 {
+            display: inline;
+            margin-left: 10px;
+            font-size: 24px;
+        }
+
+        .nav {
+            background-color: #444;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #555;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav a img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: #e4e4e4;
+            padding: 20px;
+            margin-right: 20px;
+        }
+
+        .sidebar h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .content {
+            width: 75%;
             background-color: #fff;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
         }
 
-        .login-container h2 {
+        .content h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
             text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .login-container input[type="text"],
-        .login-container input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .login-container button {
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .login-container button:hover {
-            background-color: #45a049;
-        }
-
-        .login-container p {
-            text-align: center;
-            margin-top: 15px;
-        }
-
-        .login-container p a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-
-        .login-container p a:hover {
-            text-decoration: underline;
+            padding: 20px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
-    <div class="login-container">
-        <h2>Login</h2>
-        <form action="/login" method="post">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    <header class="header">
+        <img src="nba-logo.png" alt="NBA Logo">
+        <h1>Basketball World</h1>
+    </header>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    <nav class="nav">
+        <a href="#"><img src="lakers-logo.png" alt="Lakers Logo"> Lakers</a>
+        <a href="#"><img src="warriors-logo.png" alt="Warriors Logo"> Warriors</a>
+        <a href="#"><img src="bulls-logo.png" alt="Bulls Logo"> Bulls</a>
+        <a href="#"><img src="celtics-logo.png" alt="Celtics Logo"> Celtics</a>
+        <a href="#"><img src="heat-logo.png" alt="Heat Logo"> Heat</a>
+    </nav>
 
-            <button type="submit">Login</button>
-        </form>
-        <p>Don't have an account? <a href="#">Sign up</a></p>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Best Basketball Players</h2>
+            <ul>
+                <li>Michael Jordan</li>
+                <li>LeBron James</li>
+                <li>Kobe Bryant</li>
+                <li>Magic Johnson</li>
+                <li>Larry Bird</li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <h2>Importance of Playing Basketball</h2>
+            <p>Basketball is not just a game, it is a way of life. Playing basketball can have a tremendous impact on your physical and mental health. It helps improve cardiovascular health, builds endurance, and strengthens muscles. Additionally, basketball teaches teamwork, discipline, and leadership skills. It’s also a great way to relieve stress and improve mood.</p>
+        </section>
     </div>
+
+    <footer class="footer">
+        <p>Upcoming Matches: Lakers vs Warriors - Sep 10, Bulls vs Heat - Sep 15</p>
+    </footer>
 
 </body>
 </html>
