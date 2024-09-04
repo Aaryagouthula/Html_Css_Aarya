@@ -13,6 +13,10 @@ nav{
     background-color: black ;
     text-align: center;
 }
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
 ul li {
     list-style-type:none;
     color:whitesmoke;
@@ -22,7 +26,7 @@ ul li {
 }
 section {
     display: block;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 px rgba(0, 0, 0, 0.1);
     padding: 10px;
     margin: 10px;
     border-radius: 6px;
