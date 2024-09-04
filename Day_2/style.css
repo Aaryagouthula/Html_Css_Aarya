@@ -5,11 +5,7 @@ body{
 header{
     text-align: center ;
 }
-h1 {
-    color:#0858ed
-
-}
-h2 {
+h1,h2 {
     color:#0858ed
 
 }
@@ -21,13 +17,15 @@ ul li {
     list-style-type:none;
     color:whitesmoke;
     display : inline;
+    padding : 10px 20px ;
     
 }
 section {
     display: block;
-    background-color: #f4f4f4;
-    padding: 15px;
-    margin: 15px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px;
 
 }
 section img{
